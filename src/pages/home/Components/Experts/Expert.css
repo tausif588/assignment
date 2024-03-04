@@ -1,0 +1,94 @@
+.expert__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expert__left {
+    width: 300px;display: flex;
+    flex-flow: column;
+}
+
+.expert__right {
+    width: calc(100% - 300px);
+    padding-left: 100px;
+}
+
+.expert__left .main__heading {
+    flex-grow: 1;
+}
+
+.expert__quote__msg blockquote {
+    font-size: 40px;
+    font-weight: 500;
+    color: #1F1F1F;
+}
+
+.expert__quote__by {
+    text-align: right;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #A95454;
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+
+.expert__right__imgs {
+    gap: 30px;
+    align-items: end;
+    margin-top: 24px;
+}
+.expert__right.reverse{
+    padding-left: 0px !important;
+    padding-right: 100px !important;
+} 
+.expert__quote__by.reverse{
+    text-align: start !important;
+}
+
+@media (max-width:991.98px){
+    
+    
+    
+    .expert__right {
+        padding-left: 40px;
+    }
+    
+    .expert__quote__msg blockquote {
+        font-size: 22px;
+    }
+    
+    .expert__right__imgs {
+        gap: 20px;
+    }
+    
+}
+
+
+
+@media (max-width:767.98px){
+    .expert__left {
+        width: 100%;
+    }
+    .expert__left .swiper-pagination {
+        max-width: 280px;
+    }
+    .expert__right {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .expert__right__imgs {
+        gap: 15px;
+    }
+    
+    .mh__cta {
+        width: 100%;
+        text-align: center;
+        margin-top: 34px;
+    }
+    .expert__right.reverse {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        order: 2;
+    }
+}

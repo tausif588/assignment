@@ -1,0 +1,125 @@
+body{
+  font-family: "Jost", sans-serif; font-size: 16px; font-weight: 400; color: #1F1F1F; line-height: 1.2;
+}
+.container{max-width: 1356px;width: calc(100% - 60px);}
+img{max-width: 100%;}
+
+.section-padding{padding: 100px 0;}
+.main__heading{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+}
+.main__heading h3{
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.main__heading p{
+  margin-top: auto; margin-bottom: 0;
+}
+
+.main__heading .mh__cta{
+  margin-top: 60px;
+}
+
+.btn {
+  font-size: 15px;
+  min-width: 280px;
+  padding: 17px 20px;
+  border-radius: 30px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  letter-spacing: -.75px;
+  transition: all .3s ease-in;
+}
+
+.btn-default, .btn-default:focus {
+  border: 1px solid #1f1f1f;
+}
+
+.btn-default:active, .btn-default:hover {
+  background-color: #1f1f1f !IMPORTANT;
+  color: #fff !IMPORTANT;
+}
+
+
+.swiper-pagination {
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  gap: 8px;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  flex: 1;
+}
+
+.swiper-pagination-bullet {
+  height: 4px;
+  border-radius: 2px;
+  background: #E0E0E0 !important;
+  opacity: 1;
+  position: relative;
+}
+
+.swiper-pagination-bullet::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #1f1f1f;
+  left: 0;
+  border-radius: 4px;
+  
+}
+
+.swiper-pagination-bullet-active::before{
+  animation: pagination 2.6s infinite linear;
+}
+
+@keyframes pagination{
+  from{
+      width: 0;
+  }
+  to{
+      width: 100%;
+  }
+}
+
+
+@media (max-width:991.98px){
+  body{padding-top: 52px;}
+  .container {
+    width: calc(100% - 12px);
+}
+.btn {
+  min-width: 200px;
+  padding: 13px 20px;
+}
+.main__heading h3 {
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.swiper-pagination {
+  margin-bottom: 30px;
+}
+
+.main__heading .mh__cta {
+  margin-top: 40px;
+}
+}
+
+
+@media (max-width:767.98px){
+
+.btn {
+  min-width: 160px; font-size: 11px;
+}
+.main__heading h3 {
+  font-size: 32px;
+  line-height: 1.1;
+}
+.section-padding{padding: 50px 0;}
+}

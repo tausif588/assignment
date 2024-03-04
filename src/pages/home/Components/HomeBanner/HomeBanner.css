@@ -1,0 +1,108 @@
+.home__banner .main__heading h3 {
+    font-size: 60px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 50px;
+}
+.hb__img__part {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+
+.hb__img__part .hbip__left {
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.hb__img__part .hbip__right {
+    max-width: 300px;
+    padding-left: 20px;
+}
+
+.hb__img__part .hbip__img__part img {
+    max-width: 600px;
+    width: 100%;
+}
+.hb__img__part .heading h3 {
+    font-size: 40px;
+    color: #A95454;
+    margin-bottom: 20px;
+}
+
+.hb__img__part .hbip__left  .content p {
+    color: #1F1F1F;
+}
+
+
+@media (max-width:992px) {
+    .hb__img__part .hbip__left {
+        max-width: 220px;
+        padding-right: 20px;
+    }
+    
+    .hb__img__part .hbip__right {
+        max-width: 220px;
+        padding-left: 20px;
+    }
+    .hb__img__part .hbip__img__part img {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    .hb__img__part .hbip__left {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 20px;
+        min-width: 300px;
+    }
+    
+    .hb__img__part .hbip__right {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 20px;
+        min-width: 250px;
+    }
+    .hb__img__part {
+        overflow-x: scroll;
+    }
+    .hb__img__part::-webkit-scrollbar{
+        display: none;
+    }
+    .hbip__center__mobile .hbip__center .hbip__img__part img {
+        max-width: 250px;
+    }
+    
+    .hbip__center__mobile .hbip__center .hbip__img__part {
+        display: flex;
+        justify-content: center;
+    }
+    .home__banner .main__heading h3 {
+        font-size: 30px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+        padding: 25px 15px;
+        margin-top: 20px;
+    }
+    .hb__img__part {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    .hb__img__part .heading h3 {
+        font-size: 24px;
+        color: #A95454;
+        margin-bottom: 20px;
+    }
+    .main__heading h3 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+    .hb__img__part .content p {
+        font-size: 13px;
+    }
+}
